@@ -1,0 +1,785 @@
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <style>
+        table {
+            font-family: arial, sans-serif;
+            border-collapse: collapse;
+            width: 100%;
+        }
+
+        td, th {
+            border: 1px solid #dddddd;
+            text-align: center;
+            padding: 8px;
+        }
+
+        tr:nth-child(even) {
+            background-color: #dddddd;
+        }
+
+        p {
+            color: blue;
+            font-weight: bold;
+            font-size: 20px;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+<div>
+    <p>STADIONY:</p>
+    <table id="stadions">
+        <th>Nazwa</th>
+        <th>Liczba miejsc</th>
+        <th>Oświetlenie</th>
+        <th>Długość toru (m)</th>
+        <th>Rekord toru (s)</th>
+        <tr style="color: red;">
+            <td>SGP Arena Częstochowa</td>
+            <td>16850</td>
+            <td>1800 lx</td>
+            <td>359</td>
+            <td>62.20</td>
+        </tr>
+        <tr style="color: red;">
+            <td>Stadion im. Edwarda Jancarza</td>
+            <td>17024</td>
+            <td>1800 lx</td>
+            <td>329</td>
+            <td>58.00</td>
+        </tr>
+        <tr>
+            <td>Stadion GKM Grudziądz</td>
+            <td>8000</td>
+            <td>1800 lx</td>
+            <td>379</td>
+            <td>64.41</td>
+        </tr>
+        <tr style="color: red;">
+            <td>Stadion im. Alfreda Smoczyka</td>
+            <td>16700</td>
+            <td>1800 lx</td>
+            <td>346</td>
+            <td>58.53</td>
+        </tr>
+        <tr>
+            <td>Stadion Miejski MOSiR "Bystrzyca"</td>
+            <td>9800</td>
+            <td>1800 lx</td>
+            <td>382</td>
+            <td>65.70</td>
+        </tr>
+        <tr style="color: red;">
+            <td>MotoArena</td>
+            <td>15500</td>
+            <td>1800 lx</td>
+            <td>318</td>
+            <td>56.50</td>
+        </tr>
+        <tr style="color: red;">
+            <td>Nowy Olimpijski</td>
+            <td>13000</td>
+            <td>1800 lx</td>
+            <td>352</td>
+            <td>60.99</td>
+        </tr>
+        <tr style="color: red;">
+            <td>Swiss Krono Arena</td>
+            <td>14000</td>
+            <td>1800 lx</td>
+            <td>337</td>
+            <td>58.22</td>
+        </tr>
+    </table>
+</div>
+<div>
+    <p>DRUŻYNY:</p>
+    <table id="teams">
+        <th>Nazwa</th>
+        <th>Adres e-mail</th>
+        <th>Telefon</th>
+        <th>Data założenia</th>
+        <th>Właściciel</th>
+        <th>Trener</th>
+        <tr>
+            <td>forBET Włókniarz Częstochowa</td>
+            <td>klub@wlokniarz.com</td>
+            <td>+48343619014</td>
+            <td>1946</td>
+            <td>Michał Świącik</td>
+            <td>Marek Cieślak</td>
+        </tr>
+        <tr>
+            <td>TRULY.WORK Stal Gorzów</td>
+            <td>biuro@stalgorzow.pl</td>
+            <td>+48957356245</td>
+            <td>1947</td>
+            <td>Ireneusz Zmora</td>
+            <td>Stanisław Chomski</td>
+        </tr>
+        <tr>
+            <td>MRGARDEN GKM Grudziądz</td>
+            <td>biuro@gkm.grudziadz.net</td>
+            <td>+48564644442</td>
+            <td>1979</td>
+            <td>Marcin Murawski</td>
+            <td>Robert Kempiński</td>
+        </tr>
+        <tr>
+            <td>FOGO Unia Leszno</td>
+            <td>klub@unia.leszno.pl</td>
+            <td>+48655299977</td>
+            <td>1938</td>
+            <td>Piotr Rusiecki</td>
+            <td>Piotr Baron</td>
+        </tr>
+        <tr>
+            <td>SPEED CAR MOTOR Lublin</td>
+            <td>biuro@motorlublin.com.pl</td>
+            <td>+48790550650</td>
+            <td>1962</td>
+            <td>Jakub Kępa</td>
+            <td>Jacek Ziółkowski</td>
+        </tr>
+        <tr>
+            <td>Get Well Toruń</td>
+            <td>biuro@speedway.torun.pl</td>
+            <td>+48566518066</td>
+            <td>1962</td>
+            <td>Ilona Termińska</td>
+            <td>Jacek Frątczak</td>
+        </tr>
+        <tr>
+            <td>BETARD SPARTA Wrocław</td>
+            <td>sekretariat@wts.pl</td>
+            <td>+48717747925</td>
+            <td>1950</td>
+            <td>Andrzej Rusko</td>
+            <td>Dariusz Śledź</td>
+        </tr>
+        <tr>
+            <td>STELMET FALUBAZ Zielona Góra</td>
+            <td>sekretariat@zkzssa.pl</td>
+            <td>+48684538911</td>
+            <td>1950</td>
+            <td>Adam Goliński</td>
+            <td>Adam Skórnicki</td>
+        </tr>
+    </table>
+</div>
+<div>
+    <p>ŻUŻLOWCY:</p>
+    <table id="riders">
+        <th>Imie</th>
+        <th>Nazwisko</th>
+        <th>Data urodzenia</th>
+        <th>Nadorowość</th>
+        <th>Federacja</th>
+        <th>Klub</th>
+        <tr style="color: red;">
+            <td>Adrian</td>
+            <td>Bialk</td>
+            <td>25-09-1999</td>
+            <td>PL</td>
+            <td>PZM</td>
+            <td>forBET Włókniarz Częstochowa</td>
+        </tr>
+        <tr style="color: red;">
+            <td>Damian</td>
+            <td>Dróżdż</td>
+            <td>20-12-1996</td>
+            <td>PL</td>
+            <td>PZM</td>
+            <td>forBET Włókniarz Częstochowa</td>
+        </tr>
+        <tr style="color: red;">
+            <td>Michał</td>
+            <td>Gruchalski</td>
+            <td>18-11-1998</td>
+            <td>PL</td>
+            <td>PZM</td>
+            <td>forBET Włókniarz Częstochowa</td>
+        </tr>
+        <tr style="color: red;">
+            <td>Bartłomiej</td>
+            <td>Kowalski</td>
+            <td>04-03-2002</td>
+            <td>PL</td>
+            <td>PZM</td>
+            <td>forBET Włókniarz Częstochowa</td>
+        </tr>
+        <tr style="color: orange;">
+            <td>Leon</td>
+            <td>Madsen</td>
+            <td>05-09-1998</td>
+            <td>DK</td>
+            <td>DMU</td>
+            <td>forBET Włókniarz Częstochowa</td>
+        </tr>
+        <tr style="color: red;">
+            <td>Adrian</td>
+            <td>Miedziński</td>
+            <td>20-08-1985</td>
+            <td>PL</td>
+            <td>PZM</td>
+            <td>forBET Włókniarz Częstochowa</td>
+        </tr>
+        <tr style="color: red;">
+            <td>Paweł</td>
+            <td>Przedpełski</td>
+            <td>32-06-1995</td>
+            <td>PL</td>
+            <td>PZM</td>
+            <td>forBET Włókniarz Częstochowa</td>
+        </tr>
+        <tr style="color: red;">
+            <td>Adrian</td>
+            <td>Woźnika</td>
+            <td>28-02-1999</td>
+            <td>PL</td>
+            <td>PZM</td>
+            <td>forBET Włókniarz Częstochowa</td>
+        </tr>
+        <tr style="color: brown;">
+            <td>Matej</td>
+            <td>Zagar</td>
+            <td>03-04-1983</td>
+            <td>SI</td>
+            <td>AMZS</td>
+            <td>forBET Włókniarz Częstochowa</td>
+        </tr>
+        <tr style="color: red;">
+            <td>Rafał</td>
+            <td>Karczmarz</td>
+            <td>25-02-1999</td>
+            <td>PL</td>
+            <td>PZM</td>
+            <td>TRULY.WORK Stal Gorzów</td>
+        </tr>
+        <tr style="color: red;">
+            <td>Krzysztof</td>
+            <td>Kasprzak</td>
+            <td>18-07-1984</td>
+            <td>PL</td>
+            <td>PZM</td>
+            <td>TRULY.WORK Stal Gorzów</td>
+        </tr>
+        <tr style="color: orange;">
+            <td>Peter</td>
+            <td>Kildemand</td>
+            <td>01-09-1989</td>
+            <td>DK</td>
+            <td>DMU</td>
+            <td>TRULY.WORK Stal Gorzów</td>
+        </tr>
+        <tr style="color: red;">
+            <td>Kamil</td>
+            <td>Pytlewski</td>
+            <td>27-02-2003</td>
+            <td>PL</td>
+            <td>PZM</td>
+            <td>TRULY.WORK Stal Gorzów</td>
+        </tr>
+        <tr style="color: red;">
+            <td>Alan</td>
+            <td>Szczotka</td>
+            <td>12-03-2001</td>
+            <td>PL</td>
+            <td>PZM</td>
+            <td>TRULY.WORK Stal Gorzów</td>
+        </tr>
+        <tr style="color: orange;">
+            <td>Anders</td>
+            <td>Thomsen</td>
+            <td>01-01-1994</td>
+            <td>DK</td>
+            <td>DMU</td>
+            <td>TRULY.WORK Stal Gorzów</td>
+        </tr>
+        <tr style="color: red;">
+            <td>Szymon</td>
+            <td>Woźniak</td>
+            <td>06-05-1993</td>
+            <td>PL</td>
+            <td>PZM</td>
+            <td>TRULY.WORK Stal Gorzów</td>
+        </tr>
+        <tr style="color: red;">
+            <td>Bartosz</td>
+            <td>Zmarzlik</td>
+            <td>12-04-1995</td>
+            <td>PL</td>
+            <td>PZM</td>
+            <td>TRULY.WORK Stal Gorzów</td>
+        </tr>
+        <tr style="color: orange;">
+            <td>Kenneth</td>
+            <td>Bjerre</td>
+            <td>24-05-1984</td>
+            <td>DK</td>
+            <td>DMU</td>
+            <td>MRGARDEN GKM Grudziądz</td>
+        </tr>
+        <tr style="color: red;">
+            <td>Krzysztof</td>
+            <td>Buczkowski</td>
+            <td>30-04-1986</td>
+            <td>PL</td>
+            <td>PZM</td>
+            <td>MRGARDEN GKM Grudziądz</td>
+        </tr>
+        <tr style="color: yellow;">
+            <td>Artem</td>
+            <td>Laguta</td>
+            <td>12-11-1990</td>
+            <td>RU</td>
+            <td>MFR</td>
+            <td>MRGARDEN GKM Grudziądz</td>
+        </tr>
+        <tr style="color: yellow;">
+            <td>Roman</td>
+            <td>Lakhbaum</td>
+            <td>04-08-1998</td>
+            <td>RU</td>
+            <td>MFR</td>
+            <td>MRGARDEN GKM Grudziądz</td>
+        </tr>
+        <tr style="color: red;">
+            <td>Damian</td>
+            <td>Lotarski</td>
+            <td>08-03-2001</td>
+            <td>PL</td>
+            <td>PZM</td>
+            <td>MRGARDEN GKM Grudziądz</td>
+        </tr>
+        <tr style="color: red;">
+            <td>Przemysław</td>
+            <td>Pawlicki</td>
+            <td>05-09-1991</td>
+            <td>PL</td>
+            <td>PZM</td>
+            <td>MRGARDEN GKM Grudziądz</td>
+        </tr>
+        <tr style="color: red;">
+            <td>Patryk</td>
+            <td>Rolnicki</td>
+            <td>05-07-1998</td>
+            <td>PL</td>
+            <td>PZM</td>
+            <td>MRGARDEN GKM Grudziądz</td>
+        </tr>
+        <tr style="color: red;">
+            <td>Marcin</td>
+            <td>Turowski</td>
+            <td>26-07-1999</td>
+            <td>PL</td>
+            <td>PZM</td>
+            <td>MRGARDEN GKM Grudziądz</td>
+        </tr>
+        <tr style="color: red;">
+            <td>Kamil</td>
+            <td>Wieczorek</td>
+            <td>30-04-1998</td>
+            <td>PL</td>
+            <td>PZM</td>
+            <td>MRGARDEN GKM Grudziądz</td>
+        </tr>
+        <tr style="color: red;">
+            <td>Jarosław</td>
+            <td>Hampel</td>
+            <td>17-04-1982</td>
+            <td>PL</td>
+            <td>PZM</td>
+            <td>FOGO Unia Leszno</td>
+        </tr>
+        <tr style="color: red;">
+            <td>Janusz</td>
+            <td>Kołodziej</td>
+            <td>27-05-1984</td>
+            <td>PL</td>
+            <td>PZM</td>
+            <td>FOGO Unia Leszno</td>
+        </tr>
+        <tr style="color: red;">
+            <td>Dominik</td>
+            <td>Kubera</td>
+            <td>15-04-1999</td>
+            <td>PL</td>
+            <td>PZM</td>
+            <td>FOGO Unia Leszno</td>
+        </tr>
+        <tr style="color: blue;">
+            <td>Brady</td>
+            <td>Kurtz</td>
+            <td>27-09-1996</td>
+            <td>AU</td>
+            <td>MA</td>
+            <td>FOGO Unia Leszno</td>
+        </tr>
+        <tr style="color: red;">
+            <td>Piotr</td>
+            <td>Pawlicki</td>
+            <td>30-11-1994</td>
+            <td>PL</td>
+            <td>PZM</td>
+            <td>FOGO Unia Leszno</td>
+        </tr>
+        <tr style="color: red;">
+            <td>Tymoteusz</td>
+            <td>Picz</td>
+            <td>04-01-2002</td>
+            <td>PL</td>
+            <td>PZM</td>
+            <td>FOGO Unia Leszno</td>
+        </tr>
+        <tr style="color: yellow;">
+            <td>Emil</td>
+            <td>Sayfutdinov</td>
+            <td>26-10-1989</td>
+            <td>RU</td>
+            <td>MFR</td>
+            <td>FOGO Unia Leszno</td>
+        </tr>
+        <tr style="color: red;">
+            <td>Bartosz</td>
+            <td>Smektała</td>
+            <td>22-08-1998</td>
+            <td>PL</td>
+            <td>PZM</td>
+            <td>FOGO Unia Leszno</td>
+        </tr>
+        <tr style="color: yellow;">
+            <td>Grigorij</td>
+            <td>Laguta</td>
+            <td>09-04-1984</td>
+            <td>RU</td>
+            <td>MFR</td>
+            <td>SPEED CAR MOTOR Lublin</td>
+        </tr>
+        <tr style="color: purple;">
+            <td>Robert</td>
+            <td>Lambert</td>
+            <td>05-04-1998</td>
+            <td>GB</td>
+            <td>ACU</td>
+            <td>SPEED CAR MOTOR Lublin</td>
+        </tr>
+        <tr style="color: red;">
+            <td>Dawid</td>
+            <td>Lampart</td>
+            <td>04-08-1990</td>
+            <td>PL</td>
+            <td>PZM</td>
+            <td>SPEED CAR MOTOR Lublin</td>
+        </tr>
+        <tr style="color: red;">
+            <td>Wiktor</td>
+            <td>Lampart</td>
+            <td>21-05-2001</td>
+            <td>PL</td>
+            <td>PZM</td>
+            <td>SPEED CAR MOTOR Lublin</td>
+        </tr>
+        <tr style="color: orange;">
+            <td>Mikkel</td>
+            <td>Michelsen</td>
+            <td>19-08-1994</td>
+            <td>DK</td>
+            <td>DMU</td>
+            <td>SPEED CAR MOTOR Lublin</td>
+        </tr>
+        <tr style="color: red;">
+            <td>Paweł</td>
+            <td>Miesiąc</td>
+            <td>27-04-1985</td>
+            <td>PL</td>
+            <td>PZM</td>
+            <td>SPEED CAR MOTOR Lublin</td>
+        </tr>
+        <tr style="color: red;">
+            <td>Grzegorz</td>
+            <td>Zengota</td>
+            <td>29-08-1988</td>
+            <td>PL</td>
+            <td>PZM</td>
+            <td>SPEED CAR MOTOR Lublin</td>
+        </tr>
+        <tr style="color: blue;">
+            <td>Jason</td>
+            <td>Doyle</td>
+            <td>06-10-1985</td>
+            <td>AU</td>
+            <td>MA</td>
+            <td>Get Well Toruń</td>
+        </tr>
+        <tr style="color: blue;">
+            <td>Jack</td>
+            <td>Holder</td>
+            <td>23-03-1996</td>
+            <td>AU</td>
+            <td>MA</td>
+            <td>Get Well Toruń</td>
+        </tr>
+        <tr style="color: blue;">
+            <td>Chris</td>
+            <td>Holder</td>
+            <td>24-09-1987</td>
+            <td>AU</td>
+            <td>MA</td>
+            <td>Get Well Toruń</td>
+        </tr>
+        <tr style="color: red;">
+            <td>Rune</td>
+            <td>Holta</td>
+            <td>29-08-1973</td>
+            <td>PL</td>
+            <td>PZM</td>
+            <td>Get Well Toruń</td>
+        </tr>
+        <tr style="color: orange;">
+            <td>Niels Kristian</td>
+            <td>Iversen</td>
+            <td>20-06-1982</td>
+            <td>DK</td>
+            <td>DMU</td>
+            <td>Get Well Toruń</td>
+        </tr>
+        <tr style="color: red;">
+            <td>Igor</td>
+            <td>Kopeć-Sobczyński</td>
+            <td>17-06-1999</td>
+            <td>PL</td>
+            <td>PZM</td>
+            <td>Get Well Toruń</td>
+        </tr>
+        <tr style="color: red;">
+            <td>Norbert</td>
+            <td>Kościuch</td>
+            <td>28-04-1984</td>
+            <td>PL</td>
+            <td>PZM</td>
+            <td>Get Well Toruń</td>
+        </tr>
+        <tr style="color: yellow;">
+            <td>Gleb</td>
+            <td>Chogunov</td>
+            <td>17-12-1999</td>
+            <td>RU</td>
+            <td>MFR</td>
+            <td>BETARD SPARTA Wrocław</td>
+        </tr>
+        <tr style="color: red;">
+            <td>Maksym</td>
+            <td>Drabik</td>
+            <td>22-02-1998</td>
+            <td>PL</td>
+            <td>PZM</td>
+            <td>BETARD SPARTA Wrocław</td>
+        </tr>
+        <tr style="color: blue;">
+            <td>Max</td>
+            <td>Fricke</td>
+            <td>29-03-1996</td>
+            <td>AU</td>
+            <td>MA</td>
+            <td>BETARD SPARTA Wrocław</td>
+        </tr>
+        <tr style="color: red;">
+            <td>Jakub</td>
+            <td>Jamróg</td>
+            <td>24-06-1991</td>
+            <td>PL</td>
+            <td>PZM</td>
+            <td>BETARD SPARTA Wrocław</td>
+        </tr>
+        <tr style="color: red;">
+            <td>Macej</td>
+            <td>Janowski</td>
+            <td>06-08-1991</td>
+            <td>PL</td>
+            <td>PZM</td>
+            <td>BETARD SPARTA Wrocław</td>
+        </tr>
+        <tr style="color: red;">
+            <td>Przemysław</td>
+            <td>Liszka</td>
+            <td>24-07-2000</td>
+            <td>PL</td>
+            <td>PZM</td>
+            <td>BETARD SPARTA Wrocław</td>
+        </tr>
+        <tr style="color: purple;">
+            <td>Tai</td>
+            <td>Woffinden</td>
+            <td>10-08-1990</td>
+            <td>GB</td>
+            <td>ACU</td>
+            <td>BETARD SPARTA Wrocław</td>
+        </tr>
+        <tr style="color: red;">
+            <td>Patryk</td>
+            <td>Dudek</td>
+            <td>20-06-1992</td>
+            <td>PL</td>
+            <td>PZM</td>
+            <td>STELMET FALUBAZ Zielona Góra</td>
+        </tr>
+        <tr style="color: orange;">
+            <td>Michael</td>
+            <td>Jepsen Jensen</td>
+            <td>18-02-1992</td>
+            <td>DK</td>
+            <td>DMU</td>
+            <td>STELMET FALUBAZ Zielona Góra</td>
+        </tr>
+        <tr style="color: red;">
+            <td>Norbert</td>
+            <td>Krakowiak</td>
+            <td>28-07-1999</td>
+            <td>PL</td>
+            <td>PZM</td>
+            <td>STELMET FALUBAZ Zielona Góra</td>
+        </tr>
+        <tr style="color: red;">
+            <td>Sebastian</td>
+            <td>Niedźwiedź</td>
+            <td>07-03-1997</td>
+            <td>PL</td>
+            <td>PZM</td>
+            <td>STELMET FALUBAZ Zielona Góra</td>
+        </tr>
+        <tr style="color: orange;">
+            <td>Nicki</td>
+            <td>Pedersen</td>
+            <td>02-04-1977</td>
+            <td>DK</td>
+            <td>DMU</td>
+            <td>STELMET FALUBAZ Zielona Góra</td>
+        </tr>
+        <tr style="color: red;">
+            <td>Piotr</td>
+            <td>Protasiewicz</td>
+            <td>25-01-1975</td>
+            <td>PL</td>
+            <td>PZM</td>
+            <td>STELMET FALUBAZ Zielona Góra</td>
+        </tr>
+        <tr style="color: red;">
+            <td>Mateusz</td>
+            <td>Tonder</td>
+            <td>22-11-1999</td>
+            <td>PL</td>
+            <td>PZM</td>
+            <td>STELMET FALUBAZ Zielona Góra</td>
+        </tr>
+    </table>
+</div>
+<p>Dodaj nowego żużlowca</p>
+<form id="form" action="/action_page.php" style="text-align: center">
+    Podaj imie:<br> <input type="text" name="firstname" value=""><br>
+    Podaj nazwisko:<br> <input type="text" name="lastname" value=""><br>
+    Podaj date urodzenia:<br> <input type="text" name="birthdate" value=""><br>
+    Podaj narodowość:<br> <input type="text" name="nationality" value=""><br>
+    Podaj federacje:<br> <input type="text" name="faderation" value=""><br>
+    Wybierz klub:<br> <select name="team">
+    <option>STELMET FALUBAZ Zielona Góra</option>
+    <option>forBET Włókniarz Częstochowa</option>
+    <option>TRULY.WORK Stal Gorzów</option>
+    <option>MRGARDEN GKM Grudziądz</option>
+    <option>FOGO Unia Leszno</option>
+    <option>SPEED CAR MOTOR Lublin</option>
+    <option>Get Well Toruń</option>
+    <option>BETARD SPARTA Wrocław</option>
+</select><br><br>
+</form>
+<button onclick="add()">Dodaj</button>
+<br><br>
+
+<script>
+    function add() {
+        var elements = document.getElementById('form').elements;
+        var table = document.getElementById('riders').insertRow(document.getElementById('riders').rows.length);
+        for(var i=0; i< elements.length;i++) {
+            var col = table.insertCell(i);
+            col.innerHTML = elements[i].value;
+        }
+    }
+</script>
+<div>
+    <p>TABELA LIGOWA:</p>
+    <table id="leaguetable">
+        <th>Nazwa</th>
+        <th>WYGRANE</th>
+        <th>REMISTY</th>
+        <th>PRZEGRANE</th>
+        <th>PUNKTY</th>
+        <th>BILANS</th>
+        <tr>
+            <td>FOGO Unia Leszno</td>
+            <td>6</td>
+            <td>1</td>
+            <td>0</td>
+            <td>13</td>
+            <td>78</td>
+        </tr>
+        <tr>
+            <td>STELMET FALUBAZ Zielona Góra</td>
+            <td>5</td>
+            <td>0</td>
+            <td>2</td>
+            <td>10</td>
+            <td>32</td>
+        </tr>
+        <tr>
+            <td>BETARD SPARTA Wrocław</td>
+            <td>4</td>
+            <td>0</td>
+            <td>3</td>
+            <td>8</td>
+            <td>12</td>
+        </tr>
+        <tr>
+            <td>forBET Włókniarz Częstochowa</td>
+            <td>3</td>
+            <td>0</td>
+            <td>4</td>
+            <td>6</td>
+            <td>-18</td>
+        </tr>
+        <tr>
+            <td>TRULY.WORK Stal Gorzów</td>
+            <td>3</td>
+            <td>0</td>
+            <td>4</td>
+            <td>6</td>
+            <td>-7</td>
+        </tr>
+        <tr>
+            <td>MRGARDEN GKM Grudziądz</td>
+            <td>2</td>
+            <td>1</td>
+            <td>3</td>
+            <td>5</td>
+            <td>-8</td>
+        </tr>
+        <tr>
+            <td>SPEED CAR MOTOR Lublin</td>
+            <td>2</td>
+            <td>0</td>
+            <td>5</td>
+            <td>4</td>
+            <td>-40</td>
+        </tr>
+        <tr>
+            <td>Get Well Toruń</td>
+            <td>1</td>
+            <td>0</td>
+            <td>5</td>
+            <td>2</td>
+            <td>-49</td>
+        </tr>
+    </table>
+</div>
+</body>
+</html>
