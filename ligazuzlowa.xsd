@@ -1,0 +1,182 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+
+    <!-- attributes -->
+
+    <xs:attribute name="id">
+        <xs:simpleType>
+            <xs:restriction base="xs:string">
+                <xs:pattern value="[A-Z]{2,5}"/>
+            </xs:restriction>
+        </xs:simpleType>
+    </xs:attribute>
+
+    <xs:attribute name="refid">
+        <xs:simpleType>
+            <xs:restriction base="xs:string">
+                <xs:pattern value="[A-Z]{2,5}"/>
+            </xs:restriction>
+        </xs:simpleType>
+    </xs:attribute>
+
+    <xs:attribute name="code">
+        <xs:simpleType>
+            <xs:restriction base="xs:string">
+                <xs:pattern value="[A-Z]{2}"/>
+            </xs:restriction>
+        </xs:simpleType>
+    </xs:attribute>
+
+    <xs:attribute name="unit">
+        <xs:simpleType>
+            <xs:restriction base="xs:string">
+                <xs:pattern value="(cm|m)"/>
+            </xs:restriction>
+        </xs:simpleType>
+    </xs:attribute>
+
+    <xs:complexType name="type_country">
+        <xs:simpleContent>
+            <xs:extension base="xs:string">
+                <xs:attribute ref="code"/>
+            </xs:extension>
+        </xs:simpleContent>
+    </xs:complexType>
+
+    <xs:complexType name="type_refid">
+        <xs:simpleContent>
+            <xs:extension base="xs:string">
+                <xs:attribute ref="refid"/>
+            </xs:extension>
+        </xs:simpleContent>
+    </xs:complexType>
+    
+    <xs:simpleType name="type_phone">
+        <xs:restriction base="xs:string">
+            <xs:pattern value="\+48[0-9]{9}"/>
+        </xs:restriction>
+    </xs:simpleType>
+
+    <xs:simpleType name="type_postcode">
+        <xs:restriction base="xs:string">
+            <xs:pattern value="[0-9]{2}-[0-9]{3}"/>
+        </xs:restriction>
+    </xs:simpleType>
+
+    <xs:complexType name="type_city">
+        <xs:simpleContent>
+            <xs:extension base="xs:string">
+                <xs:attribute ref="id"/>
+            </xs:extension>
+        </xs:simpleContent>
+    </xs:complexType>
+
+
+    <xs:complexType name="type_unit">
+        <xs:simpleContent>
+            <xs:extension base="xs:string">
+                <xs:attribute ref="unit"/>
+            </xs:extension>
+        </xs:simpleContent>
+    </xs:complexType>
+
+
+    <!-- address -->
+    <xs:complexType name="address_type">
+        <xs:all>
+            <xs:element name="street" type="xs:string"/>
+            <xs:element name="housenumber" type="xs:string"/>
+            <xs:element name="postcode" type="type_postcode"/>
+            <xs:element name="city" type="type_city"/>
+        </xs:all>
+    </xs:complexType>
+    <!-- stadions -->
+
+    <xs:complexType name="stadion_type">
+        <xs:sequence>
+            <xs:element name="name" type="xs:string"/>
+            <xs:element name="capacity" type="xs:positiveInteger"/>
+            <xs:element name="lighting" type="xs:string"/>
+            <xs:element name="length" type="type_unit" />
+            <xs:element name="record" type="xs:double" />
+        </xs:sequence>
+        <xs:attribute ref="id"/>
+    </xs:complexType>
+
+    <xs:complexType name="type_stadions">
+        <xs:sequence>
+            <xs:element name="stadion" type="stadion_type" minOccurs="1" maxOccurs="8" />
+        </xs:sequence>
+    </xs:complexType>
+
+    <!--teams -->
+    <xs:complexType name="type_team">
+        <xs:sequence>
+            <xs:element name="name" type="xs:string"/>
+            <xs:element name="address" type="address_type" />
+            <xs:element name="email" type="xs:string"/>
+            <xs:element name="phonenumber" type="type_phone" />
+            <xs:element name="establishmentyear" type="xs:integer" />
+            <xs:element name="president" type="xs:string" />
+            <xs:element name="coach" type="xs:string" />
+            <xs:element name="teamstadion" type="type_refid" />
+            <xs:element name="win" type="xs:integer"/>
+            <xs:element name="draw" type="xs:integer" />
+            <xs:element name="lost" type="xs:integer" />
+            <xs:element name="points" type="xs:integer"/>
+            <xs:element name="bilans" type="xs:integer"/>
+        </xs:sequence>
+        <xs:attribute ref="id"/>
+    </xs:complexType>
+
+    <xs:complexType name="type_teams">
+        <xs:sequence>
+            <xs:element name="team" type="type_team" minOccurs="1" maxOccurs="8" />
+        </xs:sequence>
+    </xs:complexType>
+
+    <xs:complexType name="rider_type">
+        <xs:sequence>
+            <xs:element name="firstname" type="xs:string"/>
+            <xs:element name="lastname" type="xs:string"/>
+            <xs:element name="birthdate" type="xs:string"/>
+            <xs:element name="nationality" type="type_country"/>
+            <xs:element name="federation" type="xs:string"/>
+            <xs:element name="riderteam" type="type_refid" />
+        </xs:sequence>
+    </xs:complexType>
+
+    <xs:complexType name="type_riders">
+        <xs:sequence>
+            <xs:element name="rider" type="rider_type" maxOccurs="unbounded" />
+        </xs:sequence>
+    </xs:complexType>
+
+    <xs:complexType name="speedwayleague_type">
+        <xs:all>
+            <xs:element name="name" type="xs:string"/>
+            <xs:element name="stadions" type="type_stadions" />
+            <xs:element name="teams" type="type_teams" />
+            <xs:element name="riders" type="type_riders"/>
+        </xs:all>
+    </xs:complexType>
+
+    <xs:element name="speedwayleague" type="speedwayleague_type">
+        <xs:key name="stadion_key">
+            <xs:selector xpath=".//stadions/stadion"/>
+            <xs:field xpath="@id"/>
+        </xs:key>
+        <xs:keyref name="team_stadion_ref" refer="stadion_key">
+            <xs:selector xpath=".//teams/team/teamstadion"/>
+            <xs:field xpath="@refid"/>
+        </xs:keyref>
+        <xs:key name="team_key">
+            <xs:selector xpath=".//teams/team"/>
+            <xs:field xpath="@id"/>
+        </xs:key>
+        <xs:keyref name="rider_team_ref" refer="team_key">
+            <xs:selector xpath=".//riders/rider/riderteam"/>
+            <xs:field xpath="@refid"/>
+        </xs:keyref>
+    </xs:element>
+</xs:schema>

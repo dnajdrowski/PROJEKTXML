@@ -1,0 +1,285 @@
+speedwayleague {
+    margin: auto;
+    width: 1600px;
+    font-weight: bold;
+    background-color: lightsteelblue;
+    display: flex;
+}
+
+speedwayleague>name {
+    margin-top: 20px;
+    font-weight: bold;
+    color: darkslateblue;
+    text-align: left;
+    font-size: 500%;
+    justify-content: center;
+}
+
+speedwayleague name:after {
+    content: '\A';
+    white-space: pre;
+}
+
+stadions:before {
+    content: 'STADIONY';
+    font-weight: bold;
+    font-size: 200%;
+    margin: 20px;
+    color: purple;
+    text-align: center;
+}
+
+stadions {
+    width: 33%;
+    border-radius: 5px;
+    display: table;
+    background-color: azure;
+    margin: 5px;
+    font-size: 150%;
+    text-align: center;
+}
+
+stadion {
+    display: block;
+}
+
+stadion name:after, capacity:after, lighting:after, length:after, record:after {
+    content: '\A';
+    white-space: pre;
+}
+
+stadion:before, team:before{
+    content: '\A ID: ' attr(id) '\A';
+    color: darkred;
+    white-space: pre;
+}
+
+stadion name {
+    font-size: 120%;
+    color: seagreen;
+}
+
+capacity:before{
+    color: orange;
+    font-weight: initial;
+    content: 'Liczb miejsc:     ';
+    font-size: 100%;
+}
+
+lighting:before {
+    color: brown;
+    font-weight: initial;
+    content: 'Oświetlenie:     ';
+    font-size: 100%;
+}
+
+length:before {
+    color: darkslateblue;
+    font-weight: initial;
+    content: 'Długość toru (m):     ';
+    font-size: 100%;
+}
+
+record:before {
+    color: orchid;
+    font-weight: initial;
+    content: 'Najlepszy czas:     ';
+    font-size: 100%;
+}
+
+
+
+stadion:hover {
+    background-color: aqua;
+}
+
+
+
+teams:before {
+    content: 'DRUŻYNY';
+    font-weight: bold;
+    font-size: 200%;
+    margin: 20px;
+    color: darkblue;
+    text-align: center;
+}
+
+teams {
+    width: 33%;
+    border-radius: 5px;
+    display: table;
+    background-color: lightyellow;
+    margin: 5px;
+    font-size: 150%;
+    text-align: center;
+}
+
+team{
+    display: block;
+}
+
+team>name:after, housenumber:after, city:after, email:after,
+establishmentyear:after,president:after, coach:after,phonenumber:after, win:after, draw:after, lost:after, points:after, bilans:after{
+    content: '\A';
+    white-space: pre;
+}
+
+team name:before {
+    font-size: 120%;
+    color: dodgerblue;
+}
+
+team name {
+    font-size: 150%;
+    color: lightseagreen;
+}
+
+team:hover {
+    background-color: lightslategray;
+}
+
+street:before {
+    color: sandybrown;
+    font-weight: initial;
+    content: 'Ulica:     ';
+    font-size: 100%;
+}
+
+housenumber:before {
+    content: '/ ';
+}
+
+postcode:before {
+     color: forestgreen;
+     font-weight: initial;
+     content: 'Miasto:     ';
+     font-size: 100%;
+ }
+
+email:before {
+    color: darkred;
+    font-weight: initial;
+    content: 'Adres e-mail:     ';
+    font-size: 100%;
+}
+
+establishmentyear:before {
+    color: purple;
+    font-weight: initial;
+    content: 'Data założenia:     ';
+    font-size: 100%;
+}
+
+president:before {
+    color: chartreuse;
+    font-weight: initial;
+    content: 'Właściciel:     ';
+    font-size: 100%;
+}
+
+coach:before {
+    color: aqua;
+    font-weight: initial;
+    content: 'Trener:     ';
+    font-size: 100%;
+}
+
+win:before {
+    color: green;
+    font-weight: initial;
+    content: 'Wygrane:     ';
+    font-size: 100%;
+}
+
+phonenumber:before {
+    color: crimson;
+    font-weight: initial;
+    content: 'Numer telefonu:     ';
+    font-size: 100%;
+}
+
+draw:before {
+    color: gold;
+    font-weight: initial;
+    content: 'Remisy:     ';
+    font-size: 100%;
+}
+
+lost:before {
+    color: indianred;
+    font-weight: initial;
+    content: 'Przegrane:     ';
+    font-size: 100%;
+}
+
+points:before {
+    color: rebeccapurple;
+    font-weight: initial;
+    content: 'Punkty:     ';
+    font-size: 100%;
+}
+
+bilans:before {
+    color: lightcoral;
+    font-weight: initial;
+    content: 'Bilans:     ';
+    font-size: 100%;
+}
+
+
+rider lastname:after, birthdate:after, nationality:after,federation:after, riderteam:after {
+    content: '\A';
+    white-space: pre;
+}
+
+
+riders:before {
+    content: 'ŻUŻLOWCY';
+    font-weight: bold;
+    font-size: 200%;
+    margin: 20px;
+    color: springgreen;
+    text-align: center;
+}
+
+riders {
+    width: 33%;
+    border-radius: 5px;
+    display: table;
+    background-color: lightcyan;
+    margin: 5px;
+    font-size: 150%;
+    text-align: center;
+}
+
+rider{
+    display: block;
+}
+
+firstname,lastname {
+    color: darkblue;
+    font-size: 160%;
+}
+
+birthdate:before {
+    color: orange;
+    font-weight: initial;
+    content: 'Data urodzenia:     ';
+    font-size: 100%;
+}
+nationality:before {
+    content:  '' attr(code);
+    font-size: 100%;
+    color: red;
+    font-weight: initial;
+}
+
+riderteam:before {
+    color:green;
+    font-weight: initial;
+    content: 'ID Drużyny:    ' attr(refid);
+    font-size: 100%;
+}
+rider:hover {
+    background-color: orchid;
+}

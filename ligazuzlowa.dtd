@@ -1,6 +1,6 @@
 <!-- stadion and stadions -->
         <!ATTLIST stadion id ID #REQUIRED>
-        <!ATTLIST length unit CDATA #FIXED "m">
+        <!ATTLIST length unit CDATA ("m"|"cm")>
         <!ENTITY % stadion_ "name, capacity, lighting, length, record">
         <!ELEMENT stadion (%stadion_;)>
         <!ELEMENT stadions (stadion+)>

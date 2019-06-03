@@ -1,8 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/css" href="style.css"?>
 <!DOCTYPE speedwayleague SYSTEM "ligazuzlowa.dtd">
 
 <speedwayleague>
-    <name>Ekstraliga</name>
+    <name>Ekstaliga</name>
 
     <stadions>
         <stadion id="SGPAC">
