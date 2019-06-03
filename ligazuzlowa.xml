@@ -1,4 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE speedwayleague SYSTEM "ligazuzlowa.dtd">
 
 <speedwayleague>
     <name>Ekstraliga</name>
@@ -83,7 +84,12 @@
             <establishmentyear>1946</establishmentyear>
             <president>Michał Świącik</president>
             <coach>Marek Cieślak</coach>
-            <stadion refid="SGPAC"/>
+            <teamstadion refid="SGPAC"/>
+            <win>3</win>
+            <draw>0</draw>
+            <lost>4</lost>
+            <points>6</points>
+            <bilans>-18</bilans>
         </team>
 
         <team id="TWSG">
@@ -99,7 +105,12 @@
             <establishmentyear>1947</establishmentyear>
             <president>Ireneusz Zmora</president>
             <coach>Stanisław Chomski</coach>
-            <stadion refid="SEJ"/>
+            <teamstadion refid="SEJ"/>
+            <win>3</win>
+            <draw>0</draw>
+            <lost>4</lost>
+            <points>6</points>
+            <bilans>-7</bilans>
         </team>
 
         <team id="GKM">
@@ -115,7 +126,12 @@
             <establishmentyear>1979</establishmentyear>
             <president>Marcin Murawski</president>
             <coach>Robert Kempiński</coach>
-            <stadion refid="SGKMG"/>
+            <teamstadion refid="SGKMG"/>
+            <win>2</win>
+            <draw>1</draw>
+            <lost>3</lost>
+            <points>5</points>
+            <bilans>-8</bilans>
         </team>
 
         <team id="FUL">
@@ -131,7 +147,12 @@
             <establishmentyear>1938</establishmentyear>
             <president>Piotr Rusiecki</president>
             <coach>Piotr Baron</coach>
-            <stadion refid="SAS"/>
+            <teamstadion refid="SAS"/>
+            <win>6</win>
+            <draw>1</draw>
+            <lost>0</lost>
+            <points>13</points>
+            <bilans>78</bilans>
         </team>
 
         <team id="SCML">
@@ -147,23 +168,12 @@
             <establishmentyear>1962</establishmentyear>
             <president>Jakub Kępa</president>
             <coach>Jacek Ziółkowski</coach>
-            <stadion refid="SMMB"/>
-        </team>
-
-        <team id="">
-            <name></name>
-            <address>
-                <street></street>
-                <housenumber></housenumber>
-                <postcode></postcode>
-                <city id=""></city>
-            </address>
-            <email></email>
-            <phonenumber></phonenumber>
-            <establishmentyear></establishmentyear>
-            <president></president>
-            <coach> </coach>
-            <stadion refid=""/>
+            <teamstadion refid="SMMB"/>
+            <win>2</win>
+            <draw>0</draw>
+            <lost>5</lost>
+            <points>4</points>
+            <bilans>-40</bilans>
         </team>
 
         <team id="GWT">
@@ -179,7 +189,12 @@
             <establishmentyear>1962 </establishmentyear>
             <president>Ilona Termińska</president>
             <coach>Jacek Frątczak</coach>
-            <stadion refid="MA"/>
+            <teamstadion refid="MA"/>
+            <win>1</win>
+            <draw>0</draw>
+            <lost>5</lost>
+            <points>2</points>
+            <bilans>-49</bilans>
         </team>
 
         <team id="BSW">
@@ -195,7 +210,12 @@
             <establishmentyear>1950</establishmentyear>
             <president>Andrzej Rusko</president>
             <coach>Dariusz Śledź</coach>
-            <stadion refid="NO"/>
+            <teamstadion refid="NO"/>
+            <win>4</win>
+            <draw>0</draw>
+            <lost>3</lost>
+            <points>8</points>
+            <bilans>12</bilans>
         </team>
 
         <team id="SFZG">
@@ -211,7 +231,12 @@
             <establishmentyear>1950</establishmentyear>
             <president>Adam Goliński</president>
             <coach>Adam Skórnicki</coach>
-            <stadion refid="SKA"/>
+            <teamstadion refid="SKA"/>
+            <win>5</win>
+            <draw>0</draw>
+            <lost>2</lost>
+            <points>10</points>
+            <bilans>32</bilans>
         </team>
     </teams>
 
@@ -220,449 +245,567 @@
             <firstname>Adrian</firstname>
             <lastname>Bialk</lastname>
             <birthdate>25-09-1999</birthdate>
-            <nationality code="PL">Polska</nationality>
+            <nationality code="PL"/>
             <federation>PZM</federation>
-            <team refid="FWC"/>
+            <riderteam refid="FWC"/>
         </rider>
 
         <rider>
             <firstname>Damian</firstname>
             <lastname>Dróżdż</lastname>
             <birthdate>20-12-1996</birthdate>
-            <nationality code="PL">Polska</nationality>
+            <nationality code="PL"/>
             <federation>PZM</federation>
-            <team refid="FWC"/>
+            <riderteam refid="FWC"/>
         </rider>
 
         <rider>
             <firstname>Michał</firstname>
             <lastname>Gruchalski</lastname>
             <birthdate>18-11-1998</birthdate>
-            <nationality code="PL">Polska</nationality>
+            <nationality code="PL"/>
             <federation>PZM</federation>
-            <team refid="FWC"/>
+            <riderteam refid="FWC"/>
         </rider>
 
         <rider>
             <firstname>Bartłomiej</firstname>
             <lastname>Kowalski</lastname>
             <birthdate>04-03-2002</birthdate>
-            <nationality code="PL">Polska</nationality>
+            <nationality code="PL"/>
             <federation>PZM</federation>
-            <team refid="FWC"/>
+            <riderteam refid="FWC"/>
         </rider>
 
         <rider>
             <firstname>Fredrik</firstname>
             <lastname>Lindgren</lastname>
             <birthdate>15-09-1985</birthdate>
-            <nationality code="SE">Szwecja</nationality>
+            <nationality code="SE"/>
             <federation>SVEMO</federation>
-            <team refid="FWC"/>
+            <riderteam refid="FWC"/>
         </rider>
 
         <rider>
             <firstname>Leon</firstname>
             <lastname>Madsen</lastname>
             <birthdate>05-09-1998</birthdate>
-            <nationality code="DK">Dania</nationality>
+            <nationality code="DK"/>
             <federation>DMU</federation>
-            <team refid="FWC"/>
+            <riderteam refid="FWC"/>
         </rider>
 
         <rider>
             <firstname>Adrian</firstname>
             <lastname>Miedziński</lastname>
             <birthdate>20-08-1985</birthdate>
-            <nationality code="PL">Polska</nationality>
+            <nationality code="PL"/>
             <federation>PZM</federation>
-            <team refid="FWC"/>
+            <riderteam refid="FWC"/>
         </rider>
 
         <rider>
             <firstname>Paweł</firstname>
             <lastname>Przedpełski</lastname>
             <birthdate>32-06-1995</birthdate>
-            <nationality code="PL">Polska</nationality>
+            <nationality code="PL"/>
             <federation>PZM</federation>
-            <team refid="FWC"/>
+            <riderteam refid="FWC"/>
         </rider>
 
         <rider>
             <firstname>Adrian</firstname>
             <lastname>Woźnika</lastname>
             <birthdate>28-02-1999</birthdate>
-            <nationality code="PL">Polska</nationality>
+            <nationality code="PL"/>
             <federation>PZM</federation>
-            <team refid="FWC"/>
+            <riderteam refid="FWC"/>
         </rider>
 
         <rider>
             <firstname>Matej</firstname>
             <lastname>Zagar</lastname>
             <birthdate>03-04-1983</birthdate>
-            <nationality code="SI">Słowenia</nationality>
+            <nationality code="SI"/>
             <federation>AMZS</federation>
-            <team refid="FWC"/>
+            <riderteam refid="FWC"/>
         </rider>
 
         <rider>
             <firstname>Rafał</firstname>
             <lastname>Karczmarz</lastname>
             <birthdate>25-02-1999</birthdate>
-            <nationality code="PL">Polska</nationality>
+            <nationality code="PL"/>
             <federation>PZM</federation>
-            <team refid="TWSG"/>
+            <riderteam refid="TWSG"/>
         </rider>
 
         <rider>
             <firstname>Krzysztof</firstname>
             <lastname>Kasprzak</lastname>
             <birthdate>18-07-1984</birthdate>
-            <nationality code="PL">Polska</nationality>
+            <nationality code="PL"/>
             <federation>PZM</federation>
-            <team refid="TWSG"/>
+            <riderteam refid="TWSG"/>
         </rider>
 
         <rider>
             <firstname>Peter</firstname>
             <lastname>Kildemand</lastname>
             <birthdate>01-09-1989</birthdate>
-            <nationality code="DK">Dania</nationality>
+            <nationality code="DK"/>
             <federation>DMU</federation>
-            <team refid="TWSG"/>
+            <riderteam refid="TWSG"/>
         </rider>
 
         <rider>
             <firstname>Kamil</firstname>
             <lastname>Pytlewski</lastname>
             <birthdate>27-02-2003</birthdate>
-            <nationality code="PL">Polska</nationality>
+            <nationality code="PL"/>
             <federation>PZM</federation>
-            <team refid="TWSG"/>
+            <riderteam refid="TWSG"/>
         </rider>
 
         <rider>
             <firstname>Alan</firstname>
             <lastname>Szczotka</lastname>
             <birthdate>12-03-2001</birthdate>
-            <nationality code="PL">Polska</nationality>
+            <nationality code="PL"/>
             <federation>PZM</federation>
-            <team refid="TWSG"/>
+            <riderteam refid="TWSG"/>
         </rider>
 
         <rider>
             <firstname>Anders</firstname>
             <lastname>Thomsen</lastname>
             <birthdate>01-01-1994</birthdate>
-            <nationality code="DK">Dania</nationality>
+            <nationality code="DK"/>
             <federation>DMU</federation>
-            <team refid="TWSG"/>
+            <riderteam refid="TWSG"/>
         </rider>
 
         <rider>
             <firstname>Szymon</firstname>
             <lastname>Woźniak</lastname>
             <birthdate>06-05-1993</birthdate>
-            <nationality code="PL">Polska</nationality>
+            <nationality code="PL"/>
             <federation>PZM</federation>
-            <team refid="TWSG"/>
+            <riderteam refid="TWSG"/>
         </rider>
 
         <rider>
             <firstname>Bartosz</firstname>
             <lastname>Zmarzlik</lastname>
             <birthdate>12-04-1995</birthdate>
-            <nationality code="PL">Polska</nationality>
+            <nationality code="PL"/>
             <federation>PZM</federation>
-            <team refid="TWSG"/>
+            <riderteam refid="TWSG"/>
         </rider>
 
         <rider>
             <firstname>Kenneth</firstname>
             <lastname>Bjerre</lastname>
             <birthdate>24-05-1984</birthdate>
-            <nationality code="DK">Dania</nationality>
+            <nationality code="DK"/>
             <federation>DMU</federation>
-            <team refid="GKM"/>
+            <riderteam refid="GKM"/>
         </rider>
 
         <rider>
             <firstname>Krzysztof</firstname>
             <lastname>Buczkowski</lastname>
             <birthdate>30-04-1986</birthdate>
-            <nationality code="PL">Polska</nationality>
+            <nationality code="PL"/>
             <federation>PZM</federation>
-            <team refid="GKM"/>
+            <riderteam refid="GKM"/>
         </rider>
 
         <rider>
             <firstname>Artem</firstname>
             <lastname>Laguta</lastname>
             <birthdate>12-11-1990</birthdate>
-            <nationality code="RU">Rosja</nationality>
+            <nationality code="RU"/>
             <federation>MFR</federation>
-            <team refid="GKM"/>
+            <riderteam refid="GKM"/>
         </rider>
 
         <rider>
             <firstname>Roman</firstname>
             <lastname>Lakhbaum</lastname>
             <birthdate>04-08-1998</birthdate>
-            <nationality code="RU">Rosja</nationality>
+            <nationality code="RU"/>
             <federation>MFR</federation>
-            <team refid="GKM"/>
+            <riderteam refid="GKM"/>
         </rider>
 
         <rider>
             <firstname>Antonio</firstname>
             <lastname>Lindbaeck</lastname>
             <birthdate>05-05-1985</birthdate>
-            <nationality code="SE">Szwecja</nationality>
+            <nationality code="SE"/>
             <federation>SVEMO</federation>
-            <team refid="GKM"/>
+            <riderteam refid="GKM"/>
         </rider>
 
         <rider>
             <firstname>Damian</firstname>
             <lastname>Lotarski</lastname>
             <birthdate>08-03-2001</birthdate>
-            <nationality code="PL">Polska</nationality>
+            <nationality code="PL"/>
             <federation>PZM</federation>
-            <team refid="GKM"/>
+            <riderteam refid="GKM"/>
         </rider>
 
         <rider>
             <firstname>Przemysław</firstname>
             <lastname>Pawlicki</lastname>
             <birthdate>05-09-1991</birthdate>
-            <nationality code="PL">Polska</nationality>
+            <nationality code="PL"/>
             <federation>PZM</federation>
-            <team refid="GKM"/>
+            <riderteam refid="GKM"/>
         </rider>
 
         <rider>
             <firstname>Patryk</firstname>
             <lastname>Rolnicki</lastname>
             <birthdate>05-07-1998</birthdate>
-            <nationality code="PL">Polska</nationality>
+            <nationality code="PL"/>
             <federation>PZM</federation>
-            <team refid="GKM"/>
+            <riderteam refid="GKM"/>
         </rider>
 
         <rider>
             <firstname>Marcin</firstname>
             <lastname>Turowski</lastname>
             <birthdate>26-07-1999</birthdate>
-            <nationality code="PL">Polska</nationality>
+            <nationality code="PL"/>
             <federation>PZM</federation>
-            <team refid="GKM"/>
+            <riderteam refid="GKM"/>
         </rider>
 
         <rider>
             <firstname>Kamil</firstname>
             <lastname>Wieczorek</lastname>
             <birthdate>30-04-1998</birthdate>
-            <nationality code="PL">Polska</nationality>
+            <nationality code="PL"/>
             <federation>PZM</federation>
-            <team refid="GKM"/>
+            <riderteam refid="GKM"/>
         </rider>
 
         <rider>
             <firstname>Jarosław</firstname>
             <lastname>Hampel</lastname>
             <birthdate>17-04-1982</birthdate>
-            <nationality code="PL">Polska</nationality>
+            <nationality code="PL"/>
             <federation>PZM</federation>
-            <team refid="FUL"/>
+            <riderteam refid="FUL"/>
         </rider>
 
         <rider>
             <firstname>Janusz</firstname>
             <lastname>Kołodziej</lastname>
             <birthdate>27-05-1984</birthdate>
-            <nationality code="PL">Polska</nationality>
+            <nationality code="PL"/>
             <federation>PZM</federation>
-            <team refid="FUL"/>
+            <riderteam refid="FUL"/>
         </rider>
 
         <rider>
             <firstname>Dominik</firstname>
             <lastname>Kubera</lastname>
             <birthdate>15-04-1999</birthdate>
-            <nationality code="PL">Polska</nationality>
+            <nationality code="PL"/>
             <federation>PZM</federation>
-            <team refid="FUL"/>
+            <riderteam refid="FUL"/>
         </rider>
         <rider>
             <firstname>Brady</firstname>
             <lastname>Kurtz</lastname>
             <birthdate>27-09-1996</birthdate>
-            <nationality code="AU">Australia</nationality>
+            <nationality code="AU"/>
             <federation>MA</federation>
-            <team refid="FUL"/>
+            <riderteam refid="FUL"/>
         </rider>
         <rider>
             <firstname>Piotr</firstname>
             <lastname>Pawlicki</lastname>
             <birthdate>30-11-1994</birthdate>
-            <nationality code="PL">Polska</nationality>
+            <nationality code="PL"/>
             <federation>PZM</federation>
-            <team refid="FUL"/>
+            <riderteam refid="FUL"/>
         </rider>
         <rider>
             <firstname>Tymoteusz</firstname>
             <lastname>Picz</lastname>
             <birthdate>04-01-2002</birthdate>
-            <nationality code="PL">Polska</nationality>
+            <nationality code="PL"/>
             <federation>PZM</federation>
-            <team refid="FUL"/>
+            <riderteam refid="FUL"/>
         </rider>
         <rider>
             <firstname>Emil</firstname>
             <lastname>Sayfutdinov</lastname>
             <birthdate>26-10-1989</birthdate>
-            <nationality code="RU">Rosja</nationality>
+            <nationality code="RU"/>
             <federation>MFR</federation>
-            <team refid="FUL"/>
+            <riderteam refid="FUL"/>
         </rider>
         <rider>
             <firstname>Bartosz</firstname>
             <lastname>Smektała</lastname>
             <birthdate>22-08-1998</birthdate>
-            <nationality code="PL">Polska</nationality>
+            <nationality code="PL"/>
             <federation>PZM</federation>
-            <team refid="FUL"/>
+            <riderteam refid="FUL"/>
         </rider>
         <rider>
-            <firstname></firstname>
-            <lastname></lastname>
-            <birthdate></birthdate>
-            <nationality code=""></nationality>
-            <federation></federation>
-            <team refid=""/>
+            <firstname>Andreas</firstname>
+            <lastname>Jonsson</lastname>
+            <birthdate>03-09-1980</birthdate>
+            <nationality code="SE"/>
+            <federation>SVEMO</federation>
+            <riderteam refid="SCML"/>
         </rider>
         <rider>
-            <firstname></firstname>
-            <lastname></lastname>
-            <birthdate></birthdate>
-            <nationality code=""></nationality>
-            <federation></federation>
-            <team refid=""/>
+            <firstname>Grigorij</firstname>
+            <lastname>Laguta</lastname>
+            <birthdate>09-04-1984</birthdate>
+            <nationality code="RU"/>
+            <federation>MFR</federation>
+            <riderteam refid="SCML"/>
         </rider>
         <rider>
-            <firstname></firstname>
-            <lastname></lastname>
-            <birthdate></birthdate>
-            <nationality code=""></nationality>
-            <federation></federation>
-            <team refid=""/>
+            <firstname>Robert</firstname>
+            <lastname>Lambert</lastname>
+            <birthdate>05-04-1998</birthdate>
+            <nationality code="GB"/>
+            <federation>ACU</federation>
+            <riderteam refid="SCML"/>
         </rider>
         <rider>
-            <firstname></firstname>
-            <lastname></lastname>
-            <birthdate></birthdate>
-            <nationality code=""></nationality>
-            <federation></federation>
-            <team refid=""/>
+            <firstname>Dawid</firstname>
+            <lastname>Lampart</lastname>
+            <birthdate>04-08-1990</birthdate>
+            <nationality code="PL"/>
+            <federation>PZM</federation>
+            <riderteam refid="SCML"/>
         </rider>
         <rider>
-            <firstname></firstname>
-            <lastname></lastname>
-            <birthdate></birthdate>
-            <nationality code=""></nationality>
-            <federation></federation>
-            <team refid=""/>
+            <firstname>Wiktor</firstname>
+            <lastname>Lampart</lastname>
+            <birthdate>21-05-2001</birthdate>
+            <nationality code="PL"/>
+            <federation>PZM</federation>
+            <riderteam refid="SCML"/>
         </rider>
         <rider>
-            <firstname></firstname>
-            <lastname></lastname>
-            <birthdate></birthdate>
-            <nationality code=""></nationality>
-            <federation></federation>
-            <team refid=""/>
+            <firstname>Mikkel</firstname>
+            <lastname>Michelsen</lastname>
+            <birthdate>19-08-1994</birthdate>
+            <nationality code="DK"/>
+            <federation>DMU</federation>
+            <riderteam refid="SCML"/>
         </rider>
         <rider>
-            <firstname></firstname>
-            <lastname></lastname>
-            <birthdate></birthdate>
-            <nationality code=""></nationality>
-            <federation></federation>
-            <team refid=""/>
+            <firstname>Paweł</firstname>
+            <lastname>Miesiąc</lastname>
+            <birthdate>27-04-1985</birthdate>
+            <nationality code="PL"/>
+            <federation>PZM</federation>
+            <riderteam refid="SCML"/>
         </rider>
         <rider>
-            <firstname></firstname>
-            <lastname></lastname>
-            <birthdate></birthdate>
-            <nationality code=""></nationality>
-            <federation></federation>
-            <team refid=""/>
+            <firstname>Grzegorz</firstname>
+            <lastname>Zengota</lastname>
+            <birthdate>29-08-1988</birthdate>
+            <nationality code="PL"/>
+            <federation>PZM</federation>
+            <riderteam refid="SCML"/>
         </rider>
         <rider>
-            <firstname></firstname>
-            <lastname></lastname>
-            <birthdate></birthdate>
-            <nationality code=""></nationality>
-            <federation></federation>
-            <team refid=""/>
+            <firstname>Jason</firstname>
+            <lastname>Doyle</lastname>
+            <birthdate>06-10-1985</birthdate>
+            <nationality code="AU"/>
+            <federation>MA</federation>
+            <riderteam refid="GWT"/>
         </rider>
         <rider>
-            <firstname></firstname>
-            <lastname></lastname>
-            <birthdate></birthdate>
-            <nationality code=""></nationality>
-            <federation></federation>
-            <team refid=""/>
+            <firstname>Jack</firstname>
+            <lastname>Holder</lastname>
+            <birthdate>23-03-1996</birthdate>
+            <nationality code="AU"/>
+            <federation>MA</federation>
+            <riderteam refid="GWT"/>
         </rider>
         <rider>
-            <firstname></firstname>
-            <lastname></lastname>
-            <birthdate></birthdate>
-            <nationality code=""></nationality>
-            <federation></federation>
-            <team refid=""/>
+            <firstname>Chris</firstname>
+            <lastname>Holder</lastname>
+            <birthdate>24-09-1987</birthdate>
+            <nationality code="AU"/>
+            <federation>MA</federation>
+            <riderteam refid="GWT"/>
         </rider>
         <rider>
-            <firstname></firstname>
-            <lastname></lastname>
-            <birthdate></birthdate>
-            <nationality code=""></nationality>
-            <federation></federation>
-            <team refid=""/>
+            <firstname>Rune</firstname>
+            <lastname>Holta</lastname>
+            <birthdate>29-08-1973</birthdate>
+            <nationality code="PL"/>
+            <federation>PZM</federation>
+            <riderteam refid="GWT"/>
         </rider>
         <rider>
-            <firstname></firstname>
-            <lastname></lastname>
-            <birthdate></birthdate>
-            <nationality code=""></nationality>
-            <federation></federation>
-            <team refid=""/>
+            <firstname>Niels Kristian</firstname>
+            <lastname>Iversen</lastname>
+            <birthdate>20-06-1982</birthdate>
+            <nationality code="DK"/>
+            <federation>DMU</federation>
+            <riderteam refid="GWT"/>
         </rider>
         <rider>
-            <firstname></firstname>
-            <lastname></lastname>
-            <birthdate></birthdate>
-            <nationality code=""></nationality>
-            <federation></federation>
-            <team refid=""/>
+            <firstname>Igor</firstname>
+            <lastname>Kopeć-Sobczyński</lastname>
+            <birthdate>17-06-1999</birthdate>
+            <nationality code="PL"/>
+            <federation>PZM</federation>
+            <riderteam refid="GWT"/>
         </rider>
         <rider>
-            <firstname></firstname>
-            <lastname></lastname>
-            <birthdate></birthdate>
-            <nationality code=""></nationality>
-            <federation></federation>
-            <team refid=""/>
+            <firstname>Norbert</firstname>
+            <lastname>Kościuch</lastname>
+            <birthdate>28-04-1984</birthdate>
+            <nationality code="PL"/>
+            <federation>PZM</federation>
+            <riderteam refid="GWT"/>
         </rider>
         <rider>
-            <firstname></firstname>
-            <lastname></lastname>
-            <birthdate></birthdate>
-            <nationality code=""></nationality>
-            <federation></federation>
-            <team refid=""/>
+            <firstname>Gleb</firstname>
+            <lastname>Chogunov</lastname>
+            <birthdate>17-12-1999</birthdate>
+            <nationality code="RU"/>
+            <federation>MFR</federation>
+            <riderteam refid="BSW"/>
         </rider>
-
-
+        <rider>
+            <firstname>Maksym</firstname>
+            <lastname>Drabik</lastname>
+            <birthdate>22-02-1998</birthdate>
+            <nationality code="PL"/>
+            <federation>PZM</federation>
+            <riderteam refid="BSW"/>
+        </rider>
+        <rider>
+            <firstname>Max</firstname>
+            <lastname>Fricke</lastname>
+            <birthdate>29-03-1996</birthdate>
+            <nationality code="AU"/>
+            <federation>MA</federation>
+            <riderteam refid="BSW"/>
+        </rider>
+        <rider>
+            <firstname>Jakub</firstname>
+            <lastname>Jamróg</lastname>
+            <birthdate>24-06-1991</birthdate>
+            <nationality code="PL"/>
+            <federation>PZM</federation>
+            <riderteam refid="BSW"/>
+        </rider>
+        <rider>
+            <firstname>Macej</firstname>
+            <lastname>Janowski</lastname>
+            <birthdate>06-08-1991</birthdate>
+            <nationality code="PL"/>
+            <federation>PZM</federation>
+            <riderteam refid="BSW"/>
+        </rider>
+        <rider>
+            <firstname>Przemysław</firstname>
+            <lastname>Liszka</lastname>
+            <birthdate>24-07-2000</birthdate>
+            <nationality code="PL"/>
+            <federation>PZM</federation>
+            <riderteam refid="BSW"/>
+        </rider>
+        <rider>
+            <firstname>Vaclav</firstname>
+            <lastname>Milik</lastname>
+            <birthdate>22-05-1993</birthdate>
+            <nationality code="CZ"/>
+            <federation>ACCR</federation>
+            <riderteam refid="BSW"/>
+        </rider>
+        <rider>
+            <firstname>Tai</firstname>
+            <lastname>Woffinden</lastname>
+            <birthdate>10-08-1990</birthdate>
+            <nationality code="GB"/>
+            <federation>ACU</federation>
+            <riderteam refid="BSW"/>
+        </rider>
+        <rider>
+            <firstname>Patryk</firstname>
+            <lastname>Dudek</lastname>
+            <birthdate>20-06-1992</birthdate>
+            <nationality code="PL"/>
+            <federation>PZM</federation>
+            <riderteam refid="SFZG"/>
+        </rider>
+        <rider>
+            <firstname>Michael</firstname>
+            <lastname>Jepsen Jensen</lastname>
+            <birthdate>18-02-1992</birthdate>
+            <nationality code="DK"/>
+            <federation>DMU</federation>
+            <riderteam refid="SFZG"/>
+        </rider>
+        <rider>
+            <firstname>Norbert</firstname>
+            <lastname>Krakowiak</lastname>
+            <birthdate>28-07-1999</birthdate>
+            <nationality code="PL"/>
+            <federation>PZM</federation>
+            <riderteam refid="SFZG"/>
+        </rider>
+        <rider>
+            <firstname>Sebastian</firstname>
+            <lastname>Niedźwiedź</lastname>
+            <birthdate>07-03-1997</birthdate>
+            <nationality code="PL"/>
+            <federation>PZM</federation>
+            <riderteam refid="SFZG"/>
+        </rider>
+        <rider>
+            <firstname>Nicki</firstname>
+            <lastname>Pedersen</lastname>
+            <birthdate>02-04-1977</birthdate>
+            <nationality code="DK"/>
+            <federation>DMU</federation>
+            <riderteam refid="SFZG"/>
+        </rider>
+        <rider>
+            <firstname>Piotr</firstname>
+            <lastname>Protasiewicz</lastname>
+            <birthdate>25-01-1975</birthdate>
+            <nationality code="PL"/>
+            <federation>PZM</federation>
+            <riderteam refid="SFZG"/>
+        </rider>
+        <rider>
+            <firstname>Mateusz</firstname>
+            <lastname>Tonder</lastname>
+            <birthdate>22-11-1999</birthdate>
+            <nationality code="PL"/>
+            <federation>PZM</federation>
+            <riderteam refid="SFZG"/>
+        </rider>
+        <rider>
+            <firstname>Martin</firstname>
+            <lastname>Vaculik</lastname>
+            <birthdate>05-04-1990</birthdate>
+            <nationality code="SK"/>
+            <federation>SMF</federation>
+            <riderteam refid="SFZG"/>
+        </rider>
     </riders>
 </speedwayleague>

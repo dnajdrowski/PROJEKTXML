@@ -1,0 +1,54 @@
+<!-- stadion and stadions -->
+        <!ATTLIST stadion id ID #REQUIRED>
+        <!ATTLIST length unit CDATA #FIXED "m">
+        <!ENTITY % stadion_ "name, capacity, lighting, length, record">
+        <!ELEMENT stadion (%stadion_;)>
+        <!ELEMENT stadions (stadion+)>
+        <!ELEMENT name (#PCDATA)>
+        <!ELEMENT capacity (#PCDATA)>
+        <!ELEMENT lighting (#PCDATA)>
+        <!ELEMENT length (#PCDATA)>
+        <!ELEMENT record (#PCDATA)>
+
+        <!-- team and teams -->
+        <!ATTLIST team id ID #REQUIRED>
+        <!ATTLIST city id ID #REQUIRED>
+        <!ATTLIST teamstadion refid IDREF #REQUIRED>
+        <!ENTITY % address_ "street, housenumber, postcode, city">
+        <!ENTITY % team_ "name, address, email, phonenumber, establishmentyear, president, coach, teamstadion, win, draw, lost, points, bilans">
+        <!ELEMENT address (%address_;)>
+        <!ELEMENT team (%team_;)>
+        <!ELEMENT teams (team+)>
+        <!ELEMENT teamstadion EMPTY>
+        <!ELEMENT street (#PCDATA)>
+        <!ELEMENT housenumber (#PCDATA)>
+        <!ELEMENT postcode (#PCDATA)>
+        <!ELEMENT city (#PCDATA)>
+        <!ELEMENT email (#PCDATA)>
+        <!ELEMENT phonenumber (#PCDATA)>
+        <!ELEMENT establishmentyear (#PCDATA)>
+        <!ELEMENT president (#PCDATA)>
+        <!ELEMENT coach (#PCDATA)>
+        <!ELEMENT win (#PCDATA)>
+        <!ELEMENT draw (#PCDATA)>
+        <!ELEMENT lost (#PCDATA)>
+        <!ELEMENT points (#PCDATA)>
+        <!ELEMENT bilans (#PCDATA)>
+
+        <!-- rider and riders -->
+        <!ATTLIST nationality code CDATA #REQUIRED>
+        <!ATTLIST riderteam refid IDREF #REQUIRED>
+        <!ENTITY % rider_ "firstname, lastname, birthdate, nationality, federation, riderteam">
+        <!ELEMENT rider (%rider_;)>
+        <!ELEMENT riders (rider+)>
+        <!ELEMENT firstname (#PCDATA)>
+        <!ELEMENT lastname (#PCDATA)>
+        <!ELEMENT birthdate (#PCDATA)>
+        <!ELEMENT nationality (#PCDATA)>
+        <!ELEMENT federation (#PCDATA)>
+        <!ELEMENT riderteam (#PCDATA)>
+
+        <!-- speedwayleague -->
+        <!ELEMENT speedwayleague (name, stadions, teams, riders)>
+
+
