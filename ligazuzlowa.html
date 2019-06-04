@@ -700,8 +700,11 @@
     <option>BETARD SPARTA Wrocław</option>
 </select><br><br>
 </form>
-<button onclick="add()">Dodaj</button>
-<br><br>
+<div style="text-align: center">
+    <button onclick="add()" style="margin: auto;">Dodaj</button>
+    <br><br>
+</div>
+
 
 <script>
     function add() {
@@ -719,24 +722,15 @@
 
     function loadButtons() {
         var table1 = document.getElementById('riders').rows;
-        var table2 = document.getElementById('leaguetable').rows;
         for(var i = 1; i < table1.length; i++) {
             var x = table1[i].insertCell(6);
             x.innerHTML =   "<input type='button' id='btn"+i+"' onclick='deleteRow(this.id)' value='Usuń'>"
         }
-        for(var i = 1; i < table2.length; i++) {
-            var x = table2[i].insertCell(6);
-            x.innerHTML =   "<input type='button' id='btnEdit"+i+"' onclick='edit(this.id)' value='Edytuj'> <input type='button'  id='btnSave"+i+"' onclick='edit(this.id)' value='Zapisz'>"
-        }
-
     }
+
 
     function deleteRow(n) {
         document.getElementById('riders').deleteRow(document.getElementById(n).parentNode.parentNode.rowIndex);
-    }
-
-    function edit() {
-        var win
     }
 
     function sort(n) {
