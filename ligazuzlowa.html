@@ -18,6 +18,12 @@
             background-color: #dddddd;
         }
 
+
+        tr:hover {
+            background: aquamarine;
+        }
+
+
         p {
             color: blue;
             font-weight: bold;
@@ -26,7 +32,7 @@
         }
     </style>
 </head>
-<body>
+<body onload="loadButtons()">
 <div>
     <p>STADIONY:</p>
     <table id="stadions">
@@ -171,12 +177,13 @@
 <div>
     <p>ŻUŻLOWCY:</p>
     <table id="riders">
-        <th>Imie</th>
-        <th>Nazwisko</th>
-        <th>Data urodzenia</th>
-        <th>Nadorowość</th>
-        <th>Federacja</th>
-        <th>Klub</th>
+        <th onclick="sort(0)">Imie</th>
+        <th onclick="sort(1)">Nazwisko</th>
+        <th onclick="sort(2)">Data urodzenia</th>
+        <th onclick="sort(3)">Nadorowość</th>
+        <th onclick="sort(4)">Federacja</th>
+        <th onclick="sort(5)">Klub</th>
+        <th></th>
         <tr style="color: red;">
             <td>Adrian</td>
             <td>Bialk</td>
@@ -699,10 +706,59 @@
 <script>
     function add() {
         var elements = document.getElementById('form').elements;
-        var table = document.getElementById('riders').insertRow(document.getElementById('riders').rows.length);
-        for(var i=0; i< elements.length;i++) {
+        var table = document.getElementById('riders').insertRow(-1);
+        for(var i=0; i< elements.length + 1 ;i++) {
             var col = table.insertCell(i);
-            col.innerHTML = elements[i].value;
+            if(i==6) {
+                col.innerHTML = "<input type='button' id='btn"+document.getElementById('riders').rows.length+"' onclick='deleteRow(this.id)' value='Usuń'>";
+            } else {
+                col.innerHTML = elements[i].value;
+            }
+        }
+    }
+
+    function loadButtons() {
+        var table1 = document.getElementById('riders').rows;
+        var table2 = document.getElementById('leaguetable').rows;
+        for(var i = 1; i < table1.length; i++) {
+            var x = table1[i].insertCell(6);
+            x.innerHTML =   "<input type='button' id='btn"+i+"' onclick='deleteRow(this.id)' value='Usuń'>"
+        }
+        for(var i = 1; i < table2.length; i++) {
+            var x = table2[i].insertCell(6);
+            x.innerHTML =   "<input type='button' id='btnEdit"+i+"' onclick='edit(this.id)' value='Edytuj'> <input type='button'  id='btnSave"+i+"' onclick='edit(this.id)' value='Zapisz'>"
+        }
+
+    }
+
+    function deleteRow(n) {
+        document.getElementById('riders').deleteRow(document.getElementById(n).parentNode.parentNode.rowIndex);
+    }
+
+    function edit() {
+        var win
+    }
+
+    function sort(n) {
+        var table, rows, switching, i, x, y, shouldSwitch;
+        table = document.getElementById('riders');
+        switching = true;
+        while (switching) {
+            switching = false;
+            rows = table.rows;
+            for (i = 1; i < (rows.length - 1); i++) {
+                shouldSwitch = false;
+                x = rows[i].getElementsByTagName("TD")[n];
+                y = rows[i + 1].getElementsByTagName("TD")[n];
+                if (x.innerHTML.toLowerCase() > y.innerHTML.toLowerCase()) {
+                    shouldSwitch = true;
+                    break;
+                }
+            }
+            if (shouldSwitch) {
+                rows[i].parentNode.insertBefore(rows[i + 1], rows[i]);
+                switching = true;
+            }
         }
     }
 </script>

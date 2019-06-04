@@ -7,18 +7,17 @@ speedwayleague {
 }
 
 speedwayleague>name {
-    margin-top: 20px;
-    font-weight: bold;
-    color: darkslateblue;
-    text-align: left;
-    font-size: 500%;
-    justify-content: center;
+    display: none;
+
 }
+
 
 speedwayleague name:after {
     content: '\A';
     white-space: pre;
 }
+
+
 
 stadions:before {
     content: 'STADIONY';
@@ -41,6 +40,7 @@ stadions {
 
 stadion {
     display: block;
+    border: 1px solid;
 }
 
 stadion name:after, capacity:after, lighting:after, length:after, record:after {
@@ -116,6 +116,7 @@ teams {
 
 team{
     display: block;
+    border: 1px solid;
 }
 
 team>name:after, housenumber:after, city:after, email:after,
@@ -254,6 +255,7 @@ riders {
 
 rider{
     display: block;
+    border: 1px solid;
 }
 
 firstname,lastname {
